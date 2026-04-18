@@ -7,7 +7,10 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-  res.send('Hello World! Now managed by Git actions');
+  res.status(200).json({
+    'name' : 'server',
+    'message' : 'Auto deployed'
+  })
 });
 
 app.post('/api/patient', (req, res) => {
