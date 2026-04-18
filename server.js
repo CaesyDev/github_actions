@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 
 app.post('/api/patient', (req, res) => {
   console.log(req.body);
-  res.send('Hello World!');
+  res.send('Hello World! Now managed by Git actions');
 });
 
 app.listen(port, () => {
