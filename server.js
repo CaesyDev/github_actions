@@ -7,12 +7,12 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.send('Hello World! Now managed by Git actions');
 });
 
 app.post('/api/patient', (req, res) => {
   console.log(req.body);
-  res.send('Hello World! Now managed by Git actions');
+  res.send('Hello World');
 });
 
 app.listen(port, () => {
